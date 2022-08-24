@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+        <!-- Add icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link href="styles.css" rel="stylesheet">
+
+        <title>SAMUEL NG Personal Website</title>
+
+        <!-- add icon link -->
+        <link rel = "icon" href = "logo.png" type = "image/x-icon">
+    </head>
+
+    <body>
+        <!-- As a heading -->
+        <nav class="navbar navbar-light bg-light">
+          <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                  <img src="logo.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                  <span class="navbar-brand mb-0 h1">SAMUEL NG Personal Website</span>
+                </a>
+          </div>
+        </nav>
+
+        <!-- NavBar -->
+        <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-lg py-0">
+
+            <a href="#" class="navbar-brand">SAMUEL NG</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active"> <a href="index.html" class="nav-link">HOME</a> </li>
+                    <li class="nav-item"> <a href="about.html" class="nav-link">ABOUT</a> </li>
+                    <li class="nav-item"> <a href="index.html" class="nav-link">SERVICES</a> </li>
+                    <li class="nav-item"> <a href="contacts.html" class="nav-link">CONTACTS</a> </li>
+                </ul>
+
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item active"><a class="nav-link" href="#">Sign Up</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- slideshow by Carousel plugin -->
+        <header>
+            <div id="indicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#indicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#indicators" data-slide-to="1"></li>
+                    <li data-target="#indicators" data-slide-to="2"></li>
+                    <li data-target="#indicators" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+
+                    <!-- Slide One - Set the background image for this slide in the line below -->
+                    <div class="carousel-item active">
+                        <div class="overlay-image" style="background-image: url('https://images.unsplash.com/32/Mc8kW4x9Q3aRR3RkP5Im_IMG_4417.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80')"></div>
+                        <div class="carousel-caption">
+                            <h3 class="display-4">Welcome to my Website</h3>
+                            <p class="lead">I am now learning HTML, CSS and JavaScript in CS50.</p>
+                        </div>
+                    </div>
+
+                    <!-- Slide Two - Set the background image for this slide in the line below -->
+                    <div class="carousel-item">
+                        <div class="overlay-image" style="background-image: url('https://e00-marca.uecdn.es/assets/multimedia/imagenes/2021/04/26/16194294670001.jpg')"></div>
+                        <div class="carousel-caption">
+                            <h3 class="display-4">2021 F1 Portuguese Grand Prix</h3>
+                            <p class="lead">The F1 2021 season continues with the Portuguese Grand Prix this weekend!</p>
+                        </div>
+                    </div>
+
+                    <!-- Slide Three - Set the background image for this slide in the line below -->
+                    <div class="carousel-item" style="background-image: url('https://cdn.hinatazaka46.com/images/14/348/83a8382d8dff64de3c528337ec9fc.jpg')">
+                        <div class="carousel-caption">
+                            <h3 class="display-4">日向坂46 『君しか勝たん』</h3>
+                            <p class="lead">≪2021年5月26日(水)発売　日向坂46 5thシングル『君しか勝たん』≫表題曲「君しか勝たん」のミュージックビデオを公開！</p>
+
+                                <button class="btn" style="background: #bb0000; color: white; padding: 5px 15px; border-radius: 10px;" onclick="location.href='https://www.youtube.com/watch?v=Z59HsgPVbWY'">
+                                    <i class="fa fa-youtube" style="font-size: 20px; margin: 0px 10px; padding: 2px; width: 20px"></i>
+                                    <span style="font-family: 'Source Serif Pro', serif">Play on YouTube</span>
+                                </button>
+                        </div>
+                    </div>
+
+                    <!-- Slide Four - Set the background image for this slide in the line below -->
+                    <div class="carousel-item">
+                        <div class="overlay-image" style="background-image: url('https://i.imgur.com/ar074Ia.jpg&fit=crop&w=1350&q=80')"></div>
+                        <div class="carousel-caption">
+                            <h3 class="display-4">NOGIZAKA 46</h3>
+                            <p class="lead">9TH YEAR BIRTHDAY LIVE ～4期生ライブ～</p>
+                        </div>
+                    </div>
+
+                </div> <a class="carousel-control-prev" href="#indicators" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a class="carousel-control-next" href="#indicators" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>
+            </div>
+        </header>
+
+        <!-- javascript control on scrolling-->
+        <script>
+            $(function() {
+                $(document).scroll(function() {
+                    var $nav = $("#mainNavbar");
+                    $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+                });
+            });
+        </script>
+
+        <!-- Page Content -->
+        <main>
+            <section class="py-4">
+                <div class="container">
+                    <h1 class="font-weight-light">Recent Activity</h1>
+                    <p class="lead2">After quitting the job of Assistant Engineer, I take the free online course CS50 Introduction to Computer Science I offered by Harvard.</p>
+                    <p class="lead2">Bacon ipsum dolor amet drumstick short loin ribeye sirloin ham spare ribs landjaeger, pig turducken meatball sausage. Salami cow shoulder pork loin. Meatloaf turducken andouille chuck beef ribs picanha. Filet mignon pastrami fatback ribeye leberkas shank boudin sirloin beef short ribs tail pig pork loin shoulder buffalo. Short ribs andouille swine chicken leberkas. Fatback sirloin pork belly turkey landjaeger corned beef biltong, buffalo bresaola strip steak brisket short loin salami.</p>
+                </div>
+            </section>
+
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+
+                            <div class="row">
+                                <div class ="col-lg-6">
+                                <h2 class="font-weight-light">LEARNING</h2>
+                                <img src="https://miro.medium.com/max/1440/1*ayrI8FsL11hf0Y4lA_HUvg.png" class="card-img-top" alt="CS50">
+                                <div class="card" style="width: 100%;">
+                                <div class="card-body">
+                                <h5 class="card-title">CS50 in Harvard</h5>
+                                <p class="card-text">Working on the Pset8 of learning HTML, CSS and JavaScript.</p>
+                                <a href="#" class="btn btn-primary">Explore</a>
+                                </div>
+                                </div>
+                            </div>
+
+                            <div class ="col-lg-6">
+                                <h2 class="font-weight-light">GAMING</h2>
+                                <img src="https://gamespredator.com/wp-content/uploads/2021/03/Yakuza-Kiwami-2-Full-Version-Free-Download-1000x580-1280x720.jpg" class="card-img-top" alt="YAKUZA2">
+                                <div class="card" style="width: 100%;">
+                                <div class="card-body">
+                                <h5 class="card-title">龍が如く2 YAKUZA 2</h5>
+                                <p class="card-text">Superb JRPG with excellent characters, story and music.</p>
+                                <a href="#" class="btn btn-primary">Explore</a>
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-lg-12">
+                                <h2 class="font-weight-light">MUSIC</h2>
+                                <img src="https://4.bp.blogspot.com/-Vf3dRJ0i0KA/W184eTkFy2I/AAAAAAAAAgQ/Ajx9WEiThW4gwnqfXmJ4y06u0anGbuEZgCLcBGAs/s1600/4417.jpg" class="card-img-top" alt="Nogizaka46">
+                                <div class="card" style="width: 100%;">
+                                <div class="card-body">
+                                <h5 class="card-title">乃木坂46</h5>
+                                <p class="card-text">Best Song 乃木坂46／Sing Out！</p>
+                                <p class="card-text">
+                                日本國民女子天團乃木坂46繼團體連續第四張原創冠軍專輯《直到此刻化成回憶》之後，由新生代王牌齋藤飛鳥領軍，獻唱新單曲《Sing Out！》新單曲以簡單但具渲染力的節奏散播愛與歡樂的能量，而俐落又不失美感的MV舞蹈更凸顯了乃木坂46的成長。齋藤飛鳥也表示，以往的夏日單曲都是以活潑好玩的曲風居多，但這次更想傳達的是「堅強」的力量。
+                                除了歌曲及MV充滿話題之外，本次單曲的封面也有特別的意義。因為乃木坂46的成員之中有各式各樣的人及不同的個性，為了傳達這般的「多元性」，本次發行各版本的單曲封面都請來了不同的攝影師及團隊，在不同的場景拍攝出了不同風格的乃木坂46。</p>
+
+                                <button class="btn" style="background: #bb0000; color: white; padding: 5px 40px; border-radius: 20px;" onclick="location.href='https://www.youtube.com/watch?v=xY13uZYIfCs'">
+                                    <i class="fa fa-youtube" style="font-size: 20px; margin: 0px 10px; padding: 2px; width: 20px"></i>
+                                    <span style="font-family: 'Source Serif Pro', serif">Play on YouTube</span>
+                                </button>
+
+
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+
+                    </div>
+                </div>
+                </div>
+            </section>
+
+        </main>
+
+    <footer>
+        <!-- thematic break -->
+        <hr class="mx-0 px-0">
+
+        <div class="social-links">
+
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/SamuelNg0218" class="fa fa-twitter"></a>
+        <a href="https://www.google.com/" class="fa fa-google"></a>
+        <a href="https://www.linkedin.com/in/samuel-ng-691352167/" class="fa fa-linkedin"></a>
+        <a href="#" class="fa fa-youtube"></a>
+        <a href="#" class="fa fa-instagram"></a>
+
+        </div>
+
+        <!-- Copyright -->
+
+        <div class="text-center text-dark p-3">
+            <p class="lead2">© 2021 SAMUEL NG All rights reserved.</p>
+        </div>
+
+    </footer>
+
+    </body>
+
+</html>

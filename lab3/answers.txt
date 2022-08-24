@@ -1,0 +1,11 @@
+sort1 uses: bubble sort
+
+How do you know?: The sorted50000.txt provides the ideal case to distinguish the lower bound of different sorts. As we known, bubble sort should be faster than selection sort in this case. sort 1 is much faster than sort 3 in sorting the sorted50000.txt.
+
+sort2 uses: merge sort
+
+How do you know?: sort2 takes the shortest time to sort the random50000.txt, reversed50000.txt and sorted50000.txt compared to the other 2 sorts. Merge sort is much faster when the n is getting large.
+
+sort3 uses: selection sort
+
+How do you know?: Considering the running time of reversed50000.txt, sort 2 is the fastest. sort 3 is faster than sort1. Selection sort should be faster than bubble sort in this case because bubble sort has to check the adjacent element in pair which are all out of order in pair. 

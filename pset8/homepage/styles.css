@@ -1,0 +1,164 @@
+.carousel-item {
+    height: 60vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+#mainNavbar {
+    padding-left: 50px;
+    padding-top: 25px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.navbar{
+    font-family: 'Source Serif Pro', serif;
+}
+
+.navbar li{
+    margin: 0 12px;
+}
+
+.navbar-dark .navbar-brand {
+    font-family: 'Source Serif Pro', serif;
+    color: grey !important;
+
+}
+
+.navbar-nav .nav-link {
+    font-family: 'Source Serif Pro', serif;
+    color: grey !important;
+}
+
+/* link hover effect */
+.nav-link::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: grey;
+    transition: transform .3s ease-in-out
+}
+
+.nav-link:hover::after{
+    width: 100%;
+    transition: width .3s
+}
+
+.overlay-image{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-position: center top;
+    background-size: cover;
+    position: absolute;
+    opacity: 0.85;
+}
+
+
+.display-4 {
+    font-family: 'Source Serif Pro', serif;
+    text-shadow: 1px 1px 4px #000000;
+}
+
+.lead {
+    font-family: 'Source Serif Pro', serif;
+    text-shadow: 1px 1px 4px #000000;
+}
+
+.lead2 {
+    font-family: 'Source Serif Pro', serif;
+}
+
+
+.navbar.scrolled {
+    background: rgb(34, 31, 31);
+    transition: background 500ms
+}
+
+.font-weight-light {
+    font-family: 'Source Serif Pro', serif
+}
+
+
+footer {
+  text-align: center;
+  background-color: #F9F9F9;
+  margin-top: 50px; /* space between content and footer */
+}
+
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+
+
+/* social media links*/
+.social-links{
+   text-align: center;
+}
+
+.fa {
+  padding: 15px;
+  font-size: 20px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 5px;
+}
+
+.fa:hover {
+    opacity: 0.5;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.col-lg-12{
+    padding-top: 20px;
+}
+
+.col-lg-6{
+    padding-top: 20px;
+}
+
+.content{
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+}
+

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+
+        <script>
+
+            // TODO: Add code to check answers to questions
+
+            // check the mutiple choice
+            function checkAnswer1(element)
+            {
+                if (element.className == "correct")
+                {
+                   element.style.backgroundColor = 'Green';
+                   // use.innerHTML to change the content of <p> element with id = 'feedback1'
+                   document.querySelector('#feedback1').innerHTML = "Correct!";
+                }
+                else if (element.className == "incorrect")
+                {
+                    element.style.backgroundColor = 'Red';
+                    document.querySelector('#feedback1').innerHTML = "Incorrect!";
+                }
+
+            }
+
+            // check the free response answer
+            function checkAnswer2()
+            {
+                // declare the comparing variables
+                let user_answer = document.querySelector('#answer').value;
+
+                // compare the case insensitive user answer
+                if (user_answer.toUpperCase() === "Switzerland".toUpperCase())
+                {
+                    document.querySelector('#answer').style.backgroundColor = 'Green';
+                    // use.innerHTML to change the content of <p> element with id = 'feedback2'
+                    document.querySelector('#feedback2').innerHTML = "Correct!";
+                }
+                else
+                {
+                    document.querySelector('#answer').style.backgroundColor = 'Red';
+                    document.querySelector('#feedback2').innerHTML = "Incorrect!";
+                }
+
+            }
+
+            // listen for the event
+            function listen()
+            {
+                // attach 1 single event listener to the buttonArea div and make suitable changes based on event.target attribute
+                document.querySelector('#buttonArea').addEventListener('click', function(event){
+                    checkAnswer1(event.target);
+                });
+                // select the FreeAns in form element and listen the click Event of the button
+                document.querySelector('#FreeAns').addEventListener('click', checkAnswer2);
+            }
+
+            // run script when DOM is loaded
+            document.addEventListener('DOMContentLoaded', listen);
+
+
+        </script>
+
+    </head>
+    <body>
+
+        <div class="jumbotron">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+
+                <H3>What is the approximate ratio of people to sheep in New Zealand?</H3>
+
+                <!-- TODO: Add multiple choice question here -->
+                <!--
+                USE the class attribute to specify HTML element
+                Mutiple HTML elements can share the same class e.g button in HTML
+                -->
+
+                <div id="buttonArea">
+                    <button type="button" class="incorrect">6 people per 1 sheep</button>
+                    <button type="button" class="incorrect">3 people per 1 sheep</button>
+                    <button type="button" class="incorrect">1 people per 1 sheep</button>
+                    <button type="button" class="correct">1 people per 3 sheep</button>
+                    <button type="button" class="incorrect">1 people per 6 sheep</button>
+                </div>
+
+                <!-- initialize empty paragraph -->
+                <p id="feedback1"></p>
+
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+
+                <!-- TODO: Add free response question here -->
+                <h3>In which country is it illegal to own only one guinea pig, as a lone guinea pig might get lonely?</h3>
+
+
+                <input type="text" id="answer" name="answer">
+                <button type="button" id="FreeAns">Check Answer</button>
+
+                <!-- initialize empty paragraph -->
+                <p id="feedback2"></p>
+
+            </div>
+
+        </div>
+    </body>
+</html>
